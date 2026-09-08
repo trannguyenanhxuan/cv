@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="fr" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV Executive - Anh Xuan TRAN NGUYEN | Directrice de Société & Leader Strategique</title>
+    
+    <!-- Polices & Icônes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                        serif: ['"Playfair Display"', 'serif'],
+                    },
+                    colors: {
+                        navy: {
+                            50: '#f0f4f9',
+                            100: '#e1e8f2',
+                            200: '#c3d2e6',
+                            700: '#1b3252',
+                            800: '#12223a',
+                            900: '#0a1424',
+                            950: '#050a12',
+                        },
+                        amber: {
+                            500: '#f59e0b',
+                            600: '#d97706',
+                        },
+                        emerald: {
+                            500: '#10b981',
+                            600: '#059669',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- Feuille de style personnalisée & Sécurisée -->
+    <style>
+        /* Fallbacks de style direct et variables globales */
+        :root {
+            --primary-dark: #0a1424;
+            --accent-gold: #d97706;
+            --accent-blue: #0284c7;
+            --bg-light: #f8fafc;
+            --card-border: #e2e8f0;
+        }
+
+        body {
+            font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+            background-color: #f1f5f9;
+            color: #1e293b;
+            line-height: 1.6;
+        }
+
+        .gradient-header {
+            background: linear-gradient(135deg, #0a1424 0%, #1e3a8a 60%, #0369a1 100%);
+        }
+
+        .badge-glow {
+            box-shadow: 0 0 15px rgba(217, 119, 6, 0.25);
+        }
+
+        /* Animation douce */
+        .card-hover {
+            transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .card-hover:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 12px 24px -10px rgba(15, 23, 42, 0.12);
+        }
+
+        /* STYLES D'IMPRESSION RIGOURERX */
+        @media print {
+            @page {
+                size: A4 portrait;
+                margin: 12mm 10mm 12mm 10mm;
+            }
+            body {
+                background: white !important;
+                color: #0f172a !important;
+                font-size: 11pt !important;
+            }
+            .no-print {
+                display: none !important;
+            }
+            .print-full-width {
+                width: 100% !important;
+                max-width: 100% !important;
+                margin: 0 !important;
+                padding: 0 !important;
+                box-shadow: none !important;
+                border: none !important;
+            }
+            .gradient-header {
+                background: #0a1424 !important;
+                color: white !important;
+                -webkit-print-color-adjust: exact;
+                print-color-adjust: exact;
+            }
+            .print-break-inside-avoid {
+                break-inside: avoid;
+            }
+            .print-text-dark {
+                color: #0f172a !important;
+            }
+        }
+    </style>
+</head>
+<body class="min-h-screen py-4 sm:py-10 px-2 sm:px-6">
+
+    <!-- Boutons d'actions Flottants (Masqués à l'impression) -->
+    <div class="no-print fixed bottom-6 right-6 z-50 flex flex-col gap-3">
+        <button onclick="window.print()" class="flex items-center gap-2 bg-navy-900 hover:bg-navy-800 text-white font-semibold px-5 py-3 rounded-full shadow-2xl transition duration-300 hover:scale-105 border border-amber-500/30">
+            <i class="fas fa-file-pdf text-amber-500"></i>
+            <span>Imprimer / Télécharger PDF</span>
+        </button>
+    </div>
+
+    <!-- Conteneur Principal -->
+    <main class="max-w-5xl mx-auto bg-white rounded-3xl shadow-2xl overflow-hidden border border-slate-200/80 print-full-width">
+        
+        <!-- En-tête / Header Exécutif -->
+        <header class="gradient-header text-white p-6 sm:p-10 relative overflow-hidden">
+            <!-- Arrière-plan décoratif subtil -->
+            <div class="absolute -right-20 -top-20 w-80 h-80 bg-blue-500/10 rounded-full blur-3xl pointer-events-none"></div>
+            
+            <div class="flex flex-col md:flex-row items-center md:items-start justify-between gap-8 relative z-10">
+                
+                <!-- Identité et Titre -->
+                <div class="text-center md:text-left flex-1">
+                    <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-amber-500/20 text-amber-300 text-xs font-semibold tracking-wider uppercase mb-3 border border-amber-500/30">
+                        <i class="fas fa-crown text-amber-400"></i> profil dirigeante & leader
+                    </div>
+                    <h1 class="text-3xl sm:text-5xl font-extrabold tracking-tight mb-2 font-serif text-white">
+                        Anh Xuan <span class="text-amber-400">TRAN NGUYEN</span>
+                    </h1>
+                    <p class="text-lg sm:text-2xl font-light text-slate-200 mb-6">
+                        Directrice de Société & Manager Stratégique
+                    </p>
+
+                    <!-- Accroche / Synthèse -->
+                    <p class="text-sm sm:text-base text-slate-300 leading-relaxed max-w-2xl bg-white/5 p-4 rounded-xl backdrop-blur-sm border border-white/10">
+                        Dirigeante d'entreprise chevronnée depuis plus de 8 ans dans le secteur de la restauration avec la gestion globale d'une société comptant plus de 20 salariés. Experte en pilotage de centre de profit, leadership d'équipe, stratégie commerciale et gestion des opérations. À la recherche d'un poste de Direction / Leadership au sein d'une organisation ambitieuse.
+                    </p>
+                </div>
+
+                <!-- Carte Contact Rapide -->
+                <div class="w-full md:w-72 bg-navy-900/80 backdrop-blur-md p-5 rounded-2xl border border-white/10 text-xs sm:text-sm space-y-3 shrink-0">
+                    <h3 class="text-amber-400 font-bold uppercase tracking-wider text-xs border-b border-slate-700 pb-2">Coordonnées</h3>
+                    
+                    <a href="tel:0606905179" class="flex items-center gap-3 text-slate-200 hover:text-amber-400 transition group">
+                        <span class="w-8 h-8 rounded-lg bg-white/10 flex items-center justify-center text-amber-400 group-hover:bg-amber-400 group-hover:text-navy-900 transition">
+                            <i class="fas fa-phone-alt"></i>
+                        </span>
+                        <span class="font-medium">06 06 90 51 79</span>
+                    </a>
+
+                    <a href="mailto:tran.anhxuan87@gmail.com" class="flex items-center gap-3 text-slate-200 hover:text-amber-400 transition group">
+                        <span class="w-8 h-8 rounded-lg bg-white/10 flex items-center justify-center text-amber-400 group-hover:bg-amber-400 group-hover:text-navy-900 transition">
+                            <i class="fas fa-envelope"></i>
+                        </span>
+                        <span class="font-medium truncate">tran.anhxuan87@gmail.com</span>
+                    </a>
+
+                    <div class="flex items-center gap-3 text-slate-200">
+                        <span class="w-8 h-8 rounded-lg bg-white/10 flex items-center justify-center text-amber-400 shrink-0">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </span>
+                        <span>7 rue Magenta, 69100 Villeurbanne</span>
+                    </div>
+
+                    <div class="flex items-center gap-3 text-slate-200 pt-1">
+                        <span class="w-8 h-8 rounded-lg bg-white/10 flex items-center justify-center text-amber-400 shrink-0">
+                            <i class="fas fa-globe-americas"></i>
+                        </span>
+                        <span>Mobilité : Internationale</span>
+                    </div>
+                </div>
+
+            </div>
+        </header>
+
+        <!-- Barre de Métriques Clés (KPI Executive) -->
+        <section class="bg-slate-900 text-white border-y border-slate-800 grid grid-cols-2 md:grid-cols-4 divide-x divide-y md:divide-y-0 divide-slate-800 text-center py-4">
+            <div class="p-3">
+                <span class="block text-2xl sm:text-3xl font-extrabold text-amber-400">8+ Ans</span>
+                <span class="text-xs text-slate-400 uppercase tracking-wider">Directrice d'Entreprise</span>
+            </div>
+            <div class="p-3">
+                <span class="block text-2xl sm:text-3xl font-extrabold text-amber-400">20+</span>
+                <span class="text-xs text-slate-400 uppercase tracking-wider">Collaborateurs Managés</span>
+            </div>
+            <div class="p-3">
+                <span class="block text-2xl sm:text-3xl font-extrabold text-amber-400">Master 2</span>
+                <span class="text-xs text-slate-400 uppercase tracking-wider">BAC +5 Marketing / Pro</span>
+            </div>
+            <div class="p-3">
+                <span class="block text-2xl sm:text-3xl font-extrabold text-amber-400">Trilingue</span>
+                <span class="text-xs text-slate-400 uppercase tracking-wider">Français / Viet / Anglais</span>
+            </div>
+        </section>
+
+        <!-- Corps du CV (Grille 2 Colonnes) -->
+        <div class="p-6 sm:p-10 grid grid-cols-1 lg:grid-cols-3 gap-8">
+            
+            <!-- COLONNE PRINCIPALE : Expériences Professionnelles (2/3) -->
+            <div class="lg:col-span-2 space-y-8">
+                
+                <div>
+                    <h2 class="text-2xl font-bold text-navy-900 border-b-2 border-amber-500 pb-2 mb-6 flex items-center justify-between">
+                        <span class="flex items-center gap-3">
+                            <i class="fas fa-briefcase text-amber-600"></i> Expériences de Direction & Management
+                        </span>
+                    </h2>
+
+                    <div class="space-y-6">
+
+                        <!-- Expérience 1 : Fondatrice & Directrice de Société -->
+                        <div class="card-hover bg-slate-50 p-6 rounded-2xl border-l-4 border-amber-500 shadow-sm print-break-inside-avoid">
+                            <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 mb-3">
+                                <div>
+                                    <h3 class="text-xl font-extrabold text-navy-900">Fondatrice & Directrice de Société</h3>
+                                    <p class="text-sm font-semibold text-amber-600">Secteur Restauration & Hospitality</p>
+                                </div>
+                                <span class="self-start sm:self-auto bg-navy-900 text-white text-xs font-bold px-3.5 py-1.5 rounded-full shadow-sm">
+                                    2016 – PRÉSENT
+                                </span>
+                            </div>
+
+                            <p class="text-xs font-semibold text-slate-500 uppercase tracking-wider mb-4 border-b border-slate-200 pb-2">
+                                <i class="fas fa-users text-slate-400 mr-1"></i> Direction Générale & Management de 20+ Collaborateurs
+                            </p>
+
+                            <ul class="space-y-2.5 text-sm text-slate-700">
+                                <li class="flex items-start gap-2.5">
+                                    <i class="fas fa-check-circle text-amber-500 mt-1 shrink-0"></i>
+                                    <span><strong>Direction Générale & P&L :</strong> Gestion intégrale du centre de profit, élaboration des budgets prévisionnels, contrôle des coûts d'exploitation et optimisation des marges bénéficiaires.</span>
+                                </li>
+                                <li class="flex items-start gap-2.5">
+                                    <i class="fas fa-check-circle text-amber-500 mt-1 shrink-0"></i>
+                                    <span><strong>Management des Ressources Humaines :</strong> Recrutement, intégration, formation et encadrement direct d'une équipe pluridisciplinaire de plus de 20 salariés. Gestion des plannings et du droit du travail.</span>
+                                </li>
+                                <li class="flex items-start gap-2.5">
+                                    <i class="fas fa-check-circle text-amber-500 mt-1 shrink-0"></i>
+                                    <span><strong>Stratégie Commerciale & Client :</strong> Développement de la marque, stratégie d'acquisition et de fidélisation de la clientèle, gestion de la réputation et de la satisfaction.</span>
+                                </li>
+                                <li class="flex items-start gap-2.5">
+                                    <i class="fas fa-check-circle text-amber-500 mt-1 shrink-0"></i>
+                                    <span><strong>Gestion des Opérations & Normes :</strong> Négociation fournisseurs, gestion des stocks, garantie du respect strict des normes d'hygiène (HACCP) et des réglementations en vigueur.</span>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <!-- Expérience 2 : Chef de Service Fast-Food -->
+                        <div class="card-hover bg-slate-50 p-6 rounded-2xl border-l-4 border-navy-800 shadow-sm print-break-inside-avoid">
+                            <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 mb-2">
+                                <div>
+                                    <h3 class="text-lg font-bold text-navy-900">Chef de Service & Formatrice</h3>
+                                    <p class="text-sm font-medium text-slate-600">Burger World (Restauration Rapide)</p>
+                                </div>
+                                <span class="self-start sm:self-auto bg-slate-200 text-slate-700 text-xs font-bold px-3 py-1 rounded-full">
+                                    2011 – 2013 (2 ans)
+                                </span>
+                            </div>
+                            <ul class="space-y-2 text-sm text-slate-600 mt-3">
+                                <li class="flex items-start gap-2">
+                                    <i class="fas fa-angle-right text-navy-800 mt-1"></i>
+                                    <span><strong>Encadrement d'équipe :</strong> Formation des équipiers aux standards opérationnels, distribution des tâches et animation des services à fort flux.</span>
+                                </li>
+                                <li class="flex items-start gap-2">
+                                    <i class="fas fa-angle-right text-navy-800 mt-1"></i>
+                                    <span><strong>Supervision opérationnelle :</strong> Assistance directe au manager général, contrôle de la caisse, gestion des flux clients et comptabilisation des recettes.</span>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <!-- Expérience 3 : Agence de Voyage -->
+                        <div class="card-hover bg-slate-50 p-6 rounded-2xl border-l-4 border-slate-300 shadow-sm print-break-inside-avoid">
+                            <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 mb-2">
+                                <div>
+                                    <h3 class="text-lg font-bold text-navy-900">Chargée de Clientèle & Négociation</h3>
+                                    <p class="text-sm font-medium text-slate-600">CAP Junior (Agence de Voyages)</p>
+                                </div>
+                                <span class="self-start sm:self-auto bg-slate-200 text-slate-700 text-xs font-bold px-3 py-1 rounded-full">
+                                    2012 – 2013 (6 mois)
+                                </span>
+                            </div>
+                            <p class="text-sm text-slate-600 leading-relaxed mt-2">
+                                Négociation commerciale et technique, élaboration de contrats de voyages groupés, prospection, traitement des réclamations clients et assistance conseil personnalisé.
+                            </p>
+                        </div>
+
+                        <!-- Expérience 4 : Marketing Assurances -->
+                        <div class="card-hover bg-slate-50 p-6 rounded-2xl border-l-4 border-slate-300 shadow-sm print-break-inside-avoid">
+                            <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 mb-2">
+                                <div>
+                                    <h3 class="text-lg font-bold text-navy-900">Assistante Marketing</h3>
+                                    <p class="text-sm font-medium text-slate-600">Groupama Vietnam</p>
+                                </div>
+                                <span class="self-start sm:self-auto bg-slate-200 text-slate-700 text-xs font-bold px-3 py-1 rounded-full">
+                                    2009 – 2010 (8 mois)
+                                </span>
+                            </div>
+                            <p class="text-sm text-slate-600 leading-relaxed mt-2">
+                                Conception de supports promotionnels, assistance à l'organisation d'événements d'entreprise, étude de marché et analyse des opportunités marketing web.
+                            </p>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- COLONNE SECONDAIRE : Compétences & Formations (1/3) -->
+            <div class="space-y-8">
+                
+                <!-- Bloc Compétences Clés Dirigeante -->
+                <div class="bg-slate-50 p-6 rounded-2xl border border-slate-200 print-break-inside-avoid">
+                    <h3 class="text-xl font-bold text-navy-900 border-b-2 border-amber-500 pb-2 mb-4 flex items-center gap-2">
+                        <i class="fas fa-chart-line text-amber-600"></i> Expertise & Leadership
+                    </h3>
+
+                    <div class="space-y-3">
+                        <div>
+                            <div class="flex justify-between text-xs font-bold text-slate-700 mb-1">
+                                <span>Management & Direction RH</span>
+                                <span>Expert</span>
+                            </div>
+                            <div class="w-full bg-slate-200 h-2 rounded-full overflow-hidden">
+                                <div class="bg-navy-900 h-full rounded-full" style="width: 95%"></div>
+                            </div>
+                        </div>
+
+                        <div>
+                            <div class="flex justify-between text-xs font-bold text-slate-700 mb-1">
+                                <span>Gestion Financière & P&L</span>
+                                <span>Avancé</span>
+                            </div>
+                            <div class="w-full bg-slate-200 h-2 rounded-full overflow-hidden">
+                                <div class="bg-navy-900 h-full rounded-full" style="width: 90%"></div>
+                            </div>
+                        </div>
+
+                        <div>
+                            <div class="flex justify-between text-xs font-bold text-slate-700 mb-1">
+                                <span>Opérations & Normes HACCP</span>
+                                <span>Expert</span>
+                            </div>
+                            <div class="w-full bg-slate-200 h-2 rounded-full overflow-hidden">
+                                <div class="bg-navy-900 h-full rounded-full" style="width: 95%"></div>
+                            </div>
+                        </div>
+
+                        <div>
+                            <div class="flex justify-between text-xs font-bold text-slate-700 mb-1">
+                                <span>Stratégie Commerciale & Marketing</span>
+                                <span>Avancé</span>
+                            </div>
+                            <div class="w-full bg-slate-200 h-2 rounded-full overflow-hidden">
+                                <div class="bg-navy-900 h-full rounded-full" style="width: 85%"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mt-6 pt-4 border-t border-slate-200 flex flex-wrap gap-2">
+                        <span class="bg-white text-navy-900 text-xs px-2.5 py-1 rounded-md font-semibold border border-slate-200 shadow-sm">Négociation</span>
+                        <span class="bg-white text-navy-900 text-xs px-2.5 py-1 rounded-md font-semibold border border-slate-200 shadow-sm">Résolution de problèmes</span>
+                        <span class="bg-white text-navy-900 text-xs px-2.5 py-1 rounded-md font-semibold border border-slate-200 shadow-sm">Planification</span>
+                        <span class="bg-white text-navy-900 text-xs px-2.5 py-1 rounded-md font-semibold border border-slate-200 shadow-sm">Relation Client</span>
+                    </div>
+                </div>
+
+                <!-- Bloc Diplômes et Formations -->
+                <div class="bg-slate-50 p-6 rounded-2xl border border-slate-200 print-break-inside-avoid">
+                    <h3 class="text-xl font-bold text-navy-900 border-b-2 border-amber-500 pb-2 mb-4 flex items-center gap-2">
+                        <i class="fas fa-graduation-cap text-amber-600"></i> Formations
+                    </h3>
+
+                    <div class="space-y-4 text-sm">
+                        
+                        <div class="border-l-2 border-amber-500 pl-3">
+                            <h4 class="font-bold text-slate-900">DU de Professionnalisation</h4>
+                            <p class="text-xs text-slate-600">IUT Jean Moulin – Université Lyon 3</p>
+                            <span class="text-xs font-bold text-amber-600">2013 – 2014</span>
+                        </div>
+
+                        <div class="border-l-2 border-slate-300 pl-3">
+                            <h4 class="font-bold text-slate-900">Master 2 Pro Développement & Marketing des Territoires</h4>
+                            <p class="text-xs text-slate-600">Université Lumière – Lyon 2</p>
+                            <span class="text-xs font-bold text-slate-500">2013</span>
+                        </div>
+
+                        <div class="border-l-2 border-slate-300 pl-3">
+                            <h4 class="font-bold text-slate-900">Master 1 Arts, Lettres & Langues</h4>
+                            <p class="text-xs text-slate-600">Université Lumière – Lyon 2</p>
+                            <span class="text-xs font-bold text-slate-500">2012</span>
+                        </div>
+
+                        <div class="border-l-2 border-slate-300 pl-3">
+                            <h4 class="font-bold text-slate-900">Licence en Lettres Françaises</h4>
+                            <p class="text-xs text-slate-600">Université des Sciences Humaines, Ho Chi Minh Ville</p>
+                            <span class="text-xs font-bold text-slate-500">2010</span>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- Bloc Langues -->
+                <div class="bg-slate-50 p-6 rounded-2xl border border-slate-200 print-break-inside-avoid">
+                    <h3 class="text-xl font-bold text-navy-900 border-b-2 border-amber-500 pb-2 mb-4 flex items-center gap-2">
+                        <i class="fas fa-language text-amber-600"></i> Langues
+                    </h3>
+
+                    <div class="space-y-3 text-sm">
+                        <div class="flex justify-between items-center">
+                            <span class="font-semibold text-slate-800">Vietnamien</span>
+                            <span class="text-xs font-bold px-2 py-0.5 rounded bg-emerald-100 text-emerald-800">Maternelle</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <span class="font-semibold text-slate-800">Français</span>
+                            <span class="text-xs font-bold px-2 py-0.5 rounded bg-blue-100 text-blue-800">Bilingue / Courant</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <span class="font-semibold text-slate-800">Anglais</span>
+                            <span class="text-xs font-bold px-2 py-0.5 rounded bg-slate-200 text-slate-700">Professionnel</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Centres d'intérêt -->
+                <div class="bg-slate-50 p-6 rounded-2xl border border-slate-200 print-break-inside-avoid">
+                    <h3 class="text-xl font-bold text-navy-900 border-b-2 border-amber-500 pb-2 mb-4 flex items-center gap-2">
+                        <i class="fas fa-heart text-amber-600"></i> Centres d'Intérêt
+                    </h3>
+                    <div class="flex flex-wrap gap-2 text-xs">
+                        <span class="bg-white px-3 py-1.5 rounded-full border border-slate-200 text-slate-700"><i class="fas fa-utensils text-amber-500 mr-1"></i> Pâtisserie du monde</span>
+                        <span class="bg-white px-3 py-1.5 rounded-full border border-slate-200 text-slate-700"><i class="fas fa-tshirt text-amber-500 mr-1"></i> Mode</span>
+                        <span class="bg-white px-3 py-1.5 rounded-full border border-slate-200 text-slate-700"><i class="fas fa-table-tennis-paddle-ball text-amber-500 mr-1"></i> Badminton</span>
+                        <span class="bg-white px-3 py-1.5 rounded-full border border-slate-200 text-slate-700"><i class="fas fa-plane text-amber-500 mr-1"></i> Voyage</span>
+                        <span class="bg-white px-3 py-1.5 rounded-full border border-slate-200 text-slate-700"><i class="fas fa-hand-holding-heart text-amber-500 mr-1"></i> Philanthropie</span>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- Pied de page -->
+        <footer class="bg-slate-900 text-slate-400 text-center py-6 text-xs border-t border-slate-800">
+            <p>© Anh Xuan TRAN NGUYEN — CV Web Executive pour Postes de Direction / Leadership</p>
+        </footer>
+
+    </main>
+
+    <script>
+        // Amélioration interactive pour la copie des informations de contact
+        document.querySelectorAll('a[href^="tel:"], a[href^="mailto:"]').forEach(link => {
+            link.addEventListener('click', () => {
+                const text = link.innerText.trim();
+                if (navigator.clipboard) {
+                    navigator.clipboard.writeText(text);
+                }
+            });
+        });
+    </script>
+</body>
+</html>
