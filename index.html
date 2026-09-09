@@ -136,8 +136,8 @@
             </button>
         </div>
 
-        <!-- Bouton PDF / Print -->
-        <button onclick="window.print()" class="flex items-center gap-2 bg-amber-500 hover:bg-amber-600 text-navy-950 font-bold px-4 py-2 rounded-xl text-xs shadow-lg transition hover:scale-105">
+        <!-- Bouton PDF / Print (Mis à jour pour télécharger le PDF cible) -->
+        <button onclick="downloadPDF()" class="flex items-center gap-2 bg-amber-500 hover:bg-amber-600 text-navy-950 font-bold px-4 py-2 rounded-xl text-xs shadow-lg transition hover:scale-105">
             <i class="fas fa-file-pdf"></i>
             <span data-i18n="print_btn">Imprimer / Télécharger PDF</span>
         </button>
@@ -666,6 +666,14 @@
         };
 
         let currentLang = 'fr';
+
+        // Nouvelle fonction pour gérer le téléchargement / l'ouverture des fichiers PDF cibles
+        function downloadPDF() {
+            let pdfFile = 'pdf/CV TRAN NGUYEN Anh Xuan FR.pdf';
+            if (currentLang === 'en') pdfFile = 'pdf/CV TRAN NGUYEN Anh Xuan EN.pdf';
+            if (currentLang === 'vi') pdfFile = 'pdf/CV TRAN NGUYEN Anh Xuan VI.pdf';
+            window.open(pdfFile, '_blank');
+        }
 
         function setLanguage(lang) {
             if (!i18nData[lang]) return;
